@@ -1,19 +1,40 @@
-# 🎈 Blank app template
 
-A simple Streamlit app template for you to modify!
+# 🏇 AI Horse Racing Predictor
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+This Streamlit app uses AI logic and real-time data from RapidAPI to predict value bets in UK and Irish horse racing.
 
-### How to run it on your own machine
+## 🔍 Features
 
-1. Install the requirements
+- Dropdown to select today's races
+- Calculates AI Win Probability & Value Score
+- Displays form, trainer, jockey, draw, and odds
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## 🚀 How to Deploy on Streamlit Cloud
 
-2. Run the app
+1. Fork or clone this repo
+2. Go to [streamlit.io/cloud](https://streamlit.io/cloud) and click **New app**
+3. Select this repo and use `streamlit_app.py` as the entry point
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## 🔐 Add API Credentials
+
+Go to **Settings > Secrets** in Streamlit Cloud and paste:
+
+```toml
+[rapidapi]
+key = "your-api-key"
+host = "horse-racing.p.rapidapi.com"
+```
+
+## 📦 Requirements
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## ✅ Example
+
+<img src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.svg" width="200"/>
+
+Deployed with [Streamlit](https://streamlit.io).
